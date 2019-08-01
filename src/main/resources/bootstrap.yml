@@ -1,0 +1,19 @@
+spring:
+  flyway:
+    # @see https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+    baseline-description: "<< BLANK >>"
+    baseline-on-migrate: true
+    baseline-version: 5.0.0.201906170000
+    check-location: true
+    # Maximum number of retries when attempting to connect to the database.
+    connect-retries: 3
+    # file setting
+    sql-migration-prefix: V
+    sql-migration-separator: __
+    sql-migration-suffixes: .sql
+    encoding: UTF-8
+    validate-on-migrate: false
+    out-of-order: true
+    # Name of the schema schema history table that will be used by Flyway.
+    table: mdd_schema_ver_20190617
+    locations: "classpath:db/migration"

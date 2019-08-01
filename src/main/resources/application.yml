@@ -1,2 +1,16 @@
 server:
   port: 6789
+
+spring:
+  datasource:
+    url: jdbc:mysql://150.109.49.131:3306/only
+#    jdbcUrl: jdbc:mysql://150.109.49.131:3366/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    validationQuery: SELECT 1
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate.ddl-auto: update

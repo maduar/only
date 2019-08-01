@@ -2,7 +2,7 @@ server:
   port: 6789
 
 mysql:
-  host: 150.109.49.131
+  host: mysql888
   port: 3306
 
 spring:
